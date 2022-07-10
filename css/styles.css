@@ -26,7 +26,8 @@ body {
 	font-family: "Roboto", "Times New Roman", sans-serif;
 	background-color: var(--backgr-color);
 	color: var(--text-color);
-	width: 1600px;
+	width: 100%;
+	max-width: 1600px;
 	overflow-x: hidden;
 }
 
@@ -142,6 +143,7 @@ letter-spacing: 0.02em;
 }
 
 .button-solution {
+	display: block;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.875;
@@ -151,8 +153,8 @@ letter-spacing: 0.02em;
 	height: 50px;
 	border-radius: 4px;
 	padding: 0;
-	margin-left: 700px;
-	margin-right: 700px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 30px;
 	letter-spacing: 0.06em;
 }
@@ -343,6 +345,7 @@ address {
 	font-size: 14px;
 	line-height: 1.7;
 	margin-top: 20px;
+	font-style: normal;
 }
 
 .footer-contact {
@@ -352,6 +355,7 @@ address {
 	display: block;
 	width: 231px;
 	margin-top: 9px;
+	text-decoration: none;
 }
 
 .footer-tel-contact {
@@ -361,7 +365,6 @@ address {
 footer {
 	background-color: var(--footer-background-color);
 	height: 252px;
-	width: 1600px;
 	letter-spacing: 0.03em;
 }
 
@@ -382,7 +385,9 @@ footer {
 }
 
 .portfolio-section-description {
-	border: 1px solid var(--color-border);
+	border-bottom: 1px solid var(--color-border);
+	border-left: 1px solid var(--color-border);
+	border-right: 1px solid var(--color-border);
 	width: 370px;
 	padding-left: 24px;
 	padding-bottom: 20px;
