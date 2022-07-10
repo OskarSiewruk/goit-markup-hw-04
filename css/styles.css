@@ -9,6 +9,7 @@
 	--footer-background-color: #2f303a;
 	--color-border: #eee;
 	--border-header: #ececec;
+	--solution-shadow-background: #2F303A66;
 }
 
 *,
@@ -28,7 +29,6 @@ body {
 	color: var(--text-color);
 	width: 100%;
 	max-width: 1600px;
-	overflow-x: hidden;
 }
 
 .header-background {
@@ -93,15 +93,15 @@ body {
 	font-size: 14px;
 }
 
+.header-phone {
+	margin-left: 30px;
+}
+
 .contact-background {
 padding-top: 32px;
 padding-bottom: 32px;
-margin-left: 364px;
+margin-left: 345px;
 letter-spacing: 0.02em;
-}
-
-.header-phone {
-    margin-left: 50px;
 }
 
 .footer-logo-link {
@@ -117,6 +117,23 @@ letter-spacing: 0.02em;
 	border: var(--background-button-color);
 }
 
+.icon {
+	display: inline-block;
+	
+}
+
+.envelop-symbol {
+	margin-right: 10px;
+}
+
+.phone-symbol {
+	margin-right: 10px;
+}
+
+.icon:hover {
+	fill: var(--choose-color);
+}
+
 .button-solution,
 .aside-list-button {
 	border: var(--background-button-color);
@@ -126,6 +143,7 @@ letter-spacing: 0.02em;
 	background-color: var(--footer-background-color);
 	height: 600px;
 	display: block;
+	background-image: linear-gradient(to right, var(--solution-shadow-background) 100%, var(--solution-shadow-background) 100%), url("/images/solution-background.jpg");
 }
 
 .solution-header {
