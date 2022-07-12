@@ -10,6 +10,8 @@
 	--color-border: #eee;
 	--border-header: #ececec;
 	--solution-shadow-background: #2F303A66;
+	--service-symbol-bg: #F5F4FA;
+	--border-customers: #AFB1B8;
 }
 
 *,
@@ -130,6 +132,11 @@ letter-spacing: 0.02em;
 	margin-right: 10px;
 }
 
+.header-phone:focus,
+.header-mail:focus {
+	fill: var(--choose-color);
+}
+
 .icon:hover {
 	fill: var(--choose-color);
 }
@@ -142,8 +149,10 @@ letter-spacing: 0.02em;
 .solution-section {
 	background-color: var(--footer-background-color);
 	height: 600px;
+	min-width: 1200px;
 	display: block;
 	background-image: linear-gradient(to right, var(--solution-shadow-background) 100%, var(--solution-shadow-background) 100%), url("/images/solution-background.jpg");
+	background-size: contain;
 }
 
 .solution-header {
@@ -177,6 +186,17 @@ letter-spacing: 0.02em;
 	letter-spacing: 0.06em;
 }
 
+.service-logo {
+	width: 270px;
+	height: 120px;
+	background-color: var(--service-symbol-bg);
+	text-align: center;
+}
+
+.service-symbol {
+	margin: 25px 0;
+}
+
 .service-header {
 	color: var(--button-color);
 	font-size: 14px;
@@ -184,6 +204,7 @@ letter-spacing: 0.02em;
 	line-height: 1.14;
 	text-transform: uppercase;
 	letter-spacing: 0.03em;
+	margin-top: 30px;
 }
 
 .service-list {
@@ -224,6 +245,10 @@ letter-spacing: 0.02em;
 
 .specialize {
 	margin-top: 94px;
+}
+
+.team-media {
+	margin-top: 16px;
 }
 
 .team-background {
@@ -333,6 +358,25 @@ letter-spacing: 0.02em;
 
 .click {
 	cursor: pointer;
+}
+
+.our-customers-header {
+	margin-bottom: 50px;
+}
+
+.our-customers-list {
+	display: flex;
+	gap: 30px;
+}
+
+.our-customers-list li {
+	list-style: none;
+	width: 170px;
+	height: 92px;
+	border: 1px solid var(--border-customers);
+	border-radius: 4px;
+
+
 }
 
 .header-logo-link,
