@@ -34,6 +34,10 @@ body {
 	max-width: 1600px;
 }
 
+.flex {
+	display: flex;
+}
+
 .header-background {
 	display: block;
 	height: 80px;
@@ -263,14 +267,20 @@ letter-spacing: 0.02em;
 	gap: 10px;
 }
 
-.instagram-logo {
+.icons-social {
 	width: 20px;
 	height: 20px;
-	margin-top: 10px;
+}
+
+.team-media-symbols {
+	padding-top: 16px;
 }
 
 .team-icons-social-bg {
 	fill: #afb1b8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .team-icons-social-bg:hover {
@@ -281,7 +291,6 @@ fill: #fff;
 
 .team-icons-social-bg {
 	border-radius: 50%;
-	border: 1px solid black;
 	width: 44px;
 	height: 44px;	
 }
@@ -482,6 +491,23 @@ footer {
 	background-color: var(--footer-background-color);
 	height: 252px;
 	letter-spacing: 0.03em;
+}
+
+.join-footer-header {
+	color: white;
+	margin-top: 72px;
+}
+
+.join-footer-list {
+	margin-top: 20px;
+}
+
+.footer-social-bg {
+	background-color: rgba(100%, 100%, 100%, 10%);;
+}
+
+.list-style-none {
+	list-style: none;
 }
 
 .portfolio-list-header {
