@@ -277,15 +277,16 @@ letter-spacing: 0.02em;
 }
 
 .team-icons-social-bg {
-	fill: #afb1b8;
+	fill: var(--border-customers);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.team-icons-social-bg:hover {
-background-color: #2196f3;
-fill: #fff;
+.team-icons-social-bg:hover,
+.team-icons-social-bg:focus {
+background-color: var(--choose-color);
+fill: var(--backgr-color);
 }
 
 
@@ -384,6 +385,10 @@ fill: #fff;
 	display: block;
 }
 
+.portfolio-list-item:hover {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .aside-list {
 	display: flex;
 	gap: 8px;
@@ -398,6 +403,11 @@ fill: #fff;
 	border-radius: 4px;
 	height: 38px;
 	width: 121px;
+}
+
+.aside-list-button:hover,
+.aside-list-button:focus {
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .aside-background {
@@ -494,16 +504,26 @@ footer {
 }
 
 .join-footer-header {
-	color: white;
+	color: var(--backgr-color);
 	margin-top: 72px;
+
 }
 
 .join-footer-list {
 	margin-top: 20px;
+	gap: 10px;
 }
 
 .footer-social-bg {
 	background-color: rgba(100%, 100%, 100%, 10%);;
+}
+
+.footer-gap {
+	gap: 70px;
+}
+
+.footer-icons-color {
+	fill: var(--backgr-color);
 }
 
 .list-style-none {

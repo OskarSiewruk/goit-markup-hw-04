@@ -35,10 +35,23 @@
 					</ul>
 				</nav>
 				<div class="contact-background">
-					<a class="header-mail" href="mailto:info@devstudio.com"
-						>info@devstudio.com</a
-					>
-					<a class="header-phone" href="tel:+48111111111">+48 111 111 111</a>
+					<a class="header-mail" href="mailto:info@devstudio.com">
+						<div class="icon">
+							<svg class="icon-hover envelop-symbol" width="16" height="12">
+								<use href="images/icons.svg#envelop"></use>
+							</svg>
+							info@devstudio.com
+						</div>
+					</a>
+
+					<a class="header-phone" href="tel:+48111111111">
+						<div class="icon">
+							<svg class="icon-hover phone-symbol" width="10" height="16">
+								<use href="images/icons.svg#phone-symbol"></use>
+							</svg>
+							+48 111 111 111
+						</div>
+					</a>
 				</div>
 			</div>
 		</header>
@@ -195,20 +208,61 @@
 		</main>
 
 		<footer>
-			<div class="container">
-				<h2 class="footer-logo footer-properties">
-					<a class="footer-logo-link" href="#"
-						><span class="web-footer-logo-link">Web</span
-						><span class="studio-footer-logo-link">Studio</span></a
+			<div class="container flex footer-gap">
+				<div>
+					<h2 class="footer-logo footer-properties">
+						<a class="footer-logo-link" href="#"
+							><span class="web-footer-logo-link">Web</span
+							><span class="studio-footer-logo-link">Studio</span></a
+						>
+					</h2>
+					<address class="footer-properties">
+						m. Warszawa, Aleje Jerozolimskie 21
+					</address>
+					<a
+						href="mailto:info@example.com"
+						class="footer-contact footer-properties"
+						>info@example.com
+					</a>
+					<a
+						href="tel:+48111111111"
+						class="footer-contact footer-tel-contact footer-properties"
+						>+48 111 111 111</a
 					>
-				</h2>
-				<address class="footer-properties">m. Warszawa, Aleje Jerozolimskie 21</address>
-				<a href="mailto:info@example.com" class="footer-contact footer-properties"
-					>info@example.com</a
-				>
-				<a href="tel:+48111111111" class="footer-contact footer-tel-contact footer-properties"
-					>+48 111 111 111</a
-				>
+				</div>
+				<div>
+					<h3 class="join-footer-header service-header">Dołącz do nas</h3>
+				<ul class="join-footer-list flex list-style-none">
+					<li>
+						<div class="team-icons-social-bg footer-social-bg">
+							<svg class="icons-social footer-icons-color">
+								<use href="images/icons.svg#instagram-symbol"></use>
+							</svg>
+						</div>
+					</li>
+					<li>
+					<div class="team-icons-social-bg footer-social-bg">
+							<svg class="icons-social footer-icons-color">
+								<use href="images/icons.svg#twitter-symbol"></use>
+							</svg>
+						</div>
+					</li>
+					<li>
+						<div class="team-icons-social-bg footer-social-bg">
+							<svg class="icons-social footer-icons-color">
+								<use href="images/icons.svg#facebook-symbol"></use>
+							</svg>
+						</div>
+					</li>
+					<li>
+						<div class="team-icons-social-bg footer-social-bg">
+							<svg class="icons-social footer-icons-color">
+								<use href="images/icons.svg#linkedin-symbol"></use>
+							</svg>
+						</div>
+					</li>
+				</ul>
+				</div>
 			</div>
 		</footer>
 	</body>
