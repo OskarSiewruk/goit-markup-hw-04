@@ -156,7 +156,7 @@ letter-spacing: 0.02em;
 	height: 600px;
 	min-width: 1200px;
 	display: block;
-	background-image: linear-gradient(to right, var(--solution-shadow-background) 100%, var(--solution-shadow-background) 100%), url("/images/solution-background.jpg");
+	background-image: linear-gradient(to right, var(--solution-shadow-background) 100%, var(--solution-shadow-background) 100%), url("../images/solution-background.jpg");
 	background-size: contain;
 }
 
